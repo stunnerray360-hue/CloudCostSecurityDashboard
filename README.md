@@ -1,42 +1,82 @@
-# Building a Cloud Cost and Security Anomaly Correlation Dashboard
+# Cloud Cost & Security Anomaly Correlation Dashboard
+
+## Project Summary
+
+The Cloud Cost & Security Anomaly Correlation Dashboard is a Flask-based monitoring system that analyzes cloud costs and security events. The system correlates cloud spending activities with security alerts to identify abnormal behaviour and generate risk findings.
+
+---
+
+## Student Information
+
+**Name:** Asaah Bernadette
+**Index Number:** FCM.41.018.071.23
+**Programme:** BSc Cyber Security
 
 
-## Project Overview
+---
 
-This project develops a Blue Team monitoring dashboard that correlates cloud cost activities and security events to identify possible anomalies.
+## Tools Used
 
-The system monitors unusual spending patterns and security activities, then presents the findings through an interactive dashboard.
+* Python
+* Flask
+* SQLite Database
+* HTML
+* CSS
+* JavaScript
+* Chart.js
+* MITRE ATT&CK Framework
 
-
-## Course
-
-CY376: Network Monitoring, Security and Auditing
-
-
-## Project Type
-
-Blue Team Security Monitoring Project
-
-
-## Technologies Used
-
-- Python 3
-- Flask Framework
-- SQLite Database
-- HTML
-- CSS
-- JavaScript
-- Chart.js
-
-
-## Key Features
-
-- Cloud cost monitoring
-- Security event monitoring
-- Anomaly correlation
-- Risk level assessment
-- Dashboard visualization
-- Security findings analysis
-
+---
 
 ## Project Structure
+
+```
+CloudCostSecurityDashboard
+
+├── app.py
+├── database.py
+├── correlation.py
+├── database.db
+├── templates
+│   └── dashboard.html
+├── static
+│   └── style.css
+├── docs
+├── screenshots
+└── README.md
+```
+
+---
+
+## How To Run
+
+Install Flask:
+
+```
+pip install flask
+```
+
+Run the application:
+
+```
+python app.py
+```
+
+Open in browser:
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## Evidence
+
+Screenshots of the dashboard results are available in the:
+
+```
+screenshots
+```
+
+folder.
+
