@@ -191,7 +191,7 @@ tr:hover {
 
 
 
-/* Risk Level Colors */
+/* Risk Colours */
 
 .risk-high {
 
@@ -218,5 +218,49 @@ tr:hover {
     color:green !important;
 
     font-weight:bold;
+
+}
+
+
+
+/* Information Sections */
+
+.project-info {
+
+    background:white;
+
+    margin-top:40px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+}
+
+
+
+.project-info h2 {
+
+    text-align:center;
+
+    color:#1f2937;
+
+}
+
+
+
+.info-box {
+
+    line-height:1.7;
+
+}
+
+
+
+.info-box li {
+
+    margin-bottom:10px;
 
 }
