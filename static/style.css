@@ -1,62 +1,133 @@
 body {
+
     font-family: Arial, sans-serif;
+
     background: #f4f6f8;
+
     margin: 0;
+
     padding: 20px;
+
+    color: #333;
+
 }
 
 
 h1 {
+
     text-align: center;
+
     margin-bottom: 40px;
+
+    color: #1f2937;
+
 }
+
 
 
 .dashboard {
+
     display: flex;
+
     justify-content: center;
+
     gap: 25px;
+
+    flex-wrap: wrap;
+
 }
+
 
 
 .card {
+
     background: white;
-    width: 230px;
-    padding: 20px;
+
+    width: 260px;
+
+    padding: 25px;
+
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px #aaa;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
 }
 
 
+
+.card h2 {
+
+    color: #374151;
+
+}
+
+
+
 .card h3 {
-    font-size: 28px;
+
+    font-size: 30px;
+
+    color: #2563eb;
+
+}
+
+
+
+.card p {
+
+    line-height: 1.5;
+
 }
 
 
 
 .charts {
+
     display: flex;
+
     justify-content: center;
+
     gap: 30px;
+
     margin-top: 40px;
+
+    flex-wrap: wrap;
+
 }
+
 
 
 .chart-box {
 
     background:white;
+
     width:45%;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 3px 8px #aaa;
+
+    min-width:350px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
 
 }
 
 
+
+.chart-box h2 {
+
+    text-align:center;
+
+}
+
+
+
 canvas {
 
-    max-height:250px;
+    max-height:280px;
 
 }
 
@@ -65,33 +136,87 @@ canvas {
 .alerts {
 
     background:white;
+
     margin-top:40px;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 3px 8px #aaa;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
 
 }
+
 
 
 table {
 
     width:100%;
+
     border-collapse:collapse;
 
 }
 
 
-th, td {
+
+th {
+
+    background:#2563eb;
+
+    color:white;
 
     padding:12px;
+
+}
+
+
+
+td {
+
+    padding:12px;
+
     border-bottom:1px solid #ddd;
+
     text-align:center;
 
 }
 
 
-th {
 
-    background:#eee;
+tr:hover {
+
+    background:#f1f5f9;
+
+}
+
+
+
+/* Risk Level Colors */
+
+.risk-high {
+
+    color:red !important;
+
+    font-weight:bold;
+
+}
+
+
+
+.risk-medium {
+
+    color:orange !important;
+
+    font-weight:bold;
+
+}
+
+
+
+.risk-low {
+
+    color:green !important;
+
+    font-weight:bold;
 
 }

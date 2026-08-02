@@ -7,7 +7,7 @@ cursor = connection.cursor()
 
 
 cursor.execute("""
-CREATE TABLE cloud_cost(
+CREATE TABLE IF NOT EXISTS cloud_cost(
     id INTEGER PRIMARY KEY,
     service TEXT,
     cost REAL
@@ -16,10 +16,11 @@ CREATE TABLE cloud_cost(
 
 
 cursor.execute("""
-CREATE TABLE security_events(
+CREATE TABLE IF NOT EXISTS security_events(
     id INTEGER PRIMARY KEY,
     event TEXT,
-    severity TEXT
+    severity TEXT,
+    date TEXT
 )
 """)
 
@@ -34,15 +35,17 @@ VALUES
 
 
 cursor.execute("""
-INSERT INTO security_events(event, severity)
+INSERT INTO security_events(event, severity, date)
 VALUES
-('Failed Login Attempts', 'High'),
-('New User Created', 'Medium'),
-('Port Scan Detected', 'Low')
+('Failed Login Attempts', 'High', '15/07/2026'),
+('New User Created', 'Medium', '20/07/2026'),
+('Port Scan Detected', 'Low', '25/07/2026')
 """)
 
 
 connection.commit()
+
 connection.close()
 
-print("Database created successfully")
+
+print("Database updated successfully")
