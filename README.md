@@ -3,9 +3,9 @@
 
 ## Project Overview
 
-This project develops a Blue Team monitoring dashboard that analyzes cloud cost activities and security events to identify possible anomalies.
+This project develops a Blue Team monitoring dashboard that correlates cloud cost activities and security events to identify possible anomalies.
 
-The system correlates unusual cloud spending patterns with security events and provides a risk assessment level.
+The system monitors unusual spending patterns and security activities, then presents the findings through an interactive dashboard.
 
 
 ## Course
@@ -13,14 +13,14 @@ The system correlates unusual cloud spending patterns with security events and p
 CY376: Network Monitoring, Security and Auditing
 
 
-## Team
+## Project Type
 
-Blue Team
+Blue Team Security Monitoring Project
 
 
 ## Technologies Used
 
-- Python
+- Python 3
 - Flask Framework
 - SQLite Database
 - HTML
@@ -29,14 +29,14 @@ Blue Team
 - Chart.js
 
 
-## Features
+## Key Features
 
 - Cloud cost monitoring
 - Security event monitoring
-- Risk assessment
 - Anomaly correlation
+- Risk level assessment
 - Dashboard visualization
-- Security findings display
+- Security findings analysis
 
 
 ## Project Structure
