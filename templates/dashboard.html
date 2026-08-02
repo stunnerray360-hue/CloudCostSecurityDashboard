@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cloud Cost & Security Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>Cloud Cost & Security Dashboard</h1>
+
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>Cloud Cost</h2>
+        <h3>${{ cost }}</h3>
+        <p>Total Cloud Spending</p>
+    </div>
+
+
+    <div class="card">
+        <h2>Security Alerts</h2>
+        <h3>{{ alerts }}</h3>
+        <p>Detected Events</p>
+    </div>
+
+
+    <div class="card">
+        <h2>Risk Level</h2>
+        <h3>{{ risk }}</h3>
+        <p>{{ message }}</p>
+    </div>
+
+</div>
+
+
+
+<div class="charts">
+
+    <div class="chart-box">
+        <h2>Cloud Cost Analysis</h2>
+        <canvas id="costChart"></canvas>
+    </div>
+
+
+    <div class="chart-box">
+        <h2>Security Events Analysis</h2>
+        <canvas id="securityChart"></canvas>
+    </div>
+
+</div>
+
+
+
+<div class="alerts">
+
+<h2>Security Alert Findings</h2>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Security Event</th>
+<th>Severity</th>
+<th>Finding</th>
+</tr>
+
+
+<tr>
+<td>15/07/2026</td>
+<td>Failed Login Attempts</td>
+<td>High</td>
+<td>Possible unauthorized access attempt</td>
+</tr>
+
+
+<tr>
+<td>20/07/2026</td>
+<td>New User Created</td>
+<td>Medium</td>
+<td>Review account permissions</td>
+</tr>
+
+
+<tr>
+<td>25/07/2026</td>
+<td>Port Scan Detected</td>
+<td>Low</td>
+<td>Possible reconnaissance activity</td>
+</tr>
+
+
+</table>
+
+</div>
+
+
+
+<script>
+
+new Chart(document.getElementById('costChart'),
+{
+    type:'bar',
+
+    data:{
+        labels:["EC2","S3","Database"],
+
+        datasets:[{
+            label:"Cloud Cost ($)",
+            data:[120,50,80]
+        }]
+    }
+});
+
+
+new Chart(document.getElementById('securityChart'),
+{
+    type:'pie',
+
+    data:{
+        labels:[
+            "Failed Login",
+            "New User",
+            "Port Scan"
+        ],
+
+        datasets:[{
+            label:"Security Events",
+            data:[5,3,2]
+        }]
+    }
+});
+
+</script>
+
+
+</body>
+</html>

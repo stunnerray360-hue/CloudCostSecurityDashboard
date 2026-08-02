@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.card {
+    background: white;
+    width: 230px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #aaa;
+}
+
+
+.card h3 {
+    font-size: 28px;
+}
+
+
+
+.charts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+.chart-box {
+
+    background:white;
+    width:45%;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 8px #aaa;
+
+}
+
+
+canvas {
+
+    max-height:250px;
+
+}
+
+
+
+.alerts {
+
+    background:white;
+    margin-top:40px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 8px #aaa;
+
+}
+
+
+table {
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+
+th, td {
+
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+
+}
+
+
+th {
+
+    background:#eee;
+
+}
