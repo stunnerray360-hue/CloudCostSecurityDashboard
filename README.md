@@ -30,6 +30,7 @@ The Cloud Cost and Security Anomaly Correlation Dashboard is a Flask-based monit
 
 ## Project Structure
 
+```
 CloudCostSecurityDashboard
 
 ├── app.py
@@ -51,13 +52,21 @@ CloudCostSecurityDashboard
 
 Install Flask:
 
+```
 pip install flask
+```
 
 Run the application:
 
+```
 python app.py
+```
 
 Open in browser:
 
+```
 http://127.0.0.1:5000
+```
+
+---
 
